@@ -23,7 +23,7 @@ This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server
 - https://fonts.google.com/
 
 ## Get started
-- To get started with the Password Generator, simply clone the repository to your local machine and open the index.html file in your web browser.
+- To get started with the CinePulse, simply clone the repository to your local machine and open the index.html file in your web browser.
   
 [Bootcamp 1st Project Repository](https://github.com/KiranPandranki17/Bootcamp-1st-Project.git)
 
