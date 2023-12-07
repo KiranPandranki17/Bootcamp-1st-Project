@@ -18,10 +18,5 @@ This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server
 - https://www.omdbapi.com/
 - https://fonts.google.com/
 ## License
-[MIT](https://choosealicense.com/licenses/mit/) (edited) 
-Font AwesomeFont Awesome
-Font Awesome
-The internet's icon library + toolkit. Used by millions of designers, devs, & content creators. Open-source. Always free. Always awesome.
-developer.mozilla.orgdeveloper.mozilla.org
-MDN Web Docs
-The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps. (24 kB)
+[MIT](https://choosealicense.com/licenses/mit/)
+
