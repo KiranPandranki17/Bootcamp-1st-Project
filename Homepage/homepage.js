@@ -422,12 +422,9 @@ function like(event) {
 }
 
 
-
-
-
-const likedMovies = JSON.parse(localStorage.getItem("likedMovies")) || [];
-
 const saved = () => {
+
+  const likedMovies = JSON.parse(localStorage.getItem("likedMovies")) || [];
 
     const movieDetailsOverlay = document.querySelector(".movie-details-overlay");
   if (likedMovies.length > 0) {
