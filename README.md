@@ -5,7 +5,8 @@ As movie enthusiasts, we would like to explore a wide range of movies and series
 ## Installation
 This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server side APIS in TMDB and OMDB.
 ## Screenshots
-![App Screenshot](./assets/images/screencapture-file-C-Users-Yusuf-OneDrive-Desktop-class-Challenges-Bootcamp-1st-Project-Homepage-homePage-html-2023-12-07-21_55_26.png)
+![screencapture-file-C-Users-Yusuf-OneDrive-Desktop-class-Challenges-Bootcamp-1st-Project-Homepage-homePage-html-2023-12-07-21_55_26](https://github.com/KiranPandranki17/Bootcamp-1st-Project/assets/140180379/6c6a5e95-33bb-44ed-a37e-4ee8fe195015)
+
 ## Credits
 - https://fontawesome.com/
 - https://developer.mozilla.org
