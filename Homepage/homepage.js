@@ -419,6 +419,7 @@ function like(event) {
     localStorage.setItem("likedMovies", JSON.stringify(likedMovies));
     saved();
   }
+  saved();
 }
 
 
