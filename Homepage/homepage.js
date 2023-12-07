@@ -408,7 +408,6 @@ function like(event) {
     let liked = JSON.parse(localStorage.getItem("likedMovies")) || [];
     liked.push(movieLiked);
     localStorage.setItem("likedMovies", JSON.stringify(liked));
-    saved();
   } else {
     icon.classList.remove("fa-heart");
     icon.classList.add("fa-heart-o");
@@ -417,7 +416,6 @@ function like(event) {
     let likedMovies = JSON.parse(localStorage.getItem("likedMovies")) || [];
     likedMovies = likedMovies.filter(movie => movie !== movieTitle);
     localStorage.setItem("likedMovies", JSON.stringify(likedMovies));
-    saved();
   }
   saved();
 }
