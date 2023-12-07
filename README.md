@@ -23,9 +23,16 @@ This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server
 - https://fonts.google.com/
 
 ## Get started
-- To get started with the CinePulse, simply clone the repository to your local machine and open the index.html file in your web browser.
-  
-[Bootcamp 1st Project Repository](https://github.com/KiranPandranki17/Bootcamp-1st-Project.git)
+To begin using CinePulse, follow these steps:
+
+Clone the repository to your local machine:
+
+bash
+Copy code
+git clone https://github.com/KiranPandranki17/Bootcamp-1st-Project.git
+Open the index.html file in your web browser.
+
+Alternatively, you can directly access the project via the following link: CinePulse Project
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
