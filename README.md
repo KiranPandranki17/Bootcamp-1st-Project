@@ -24,7 +24,9 @@ This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server
 
 ## Get started
 - To get started with the Password Generator, simply clone the repository to your local machine and open the index.html file in your web browser.
-git clone <(https://github.com/KiranPandranki17/Bootcamp-1st-Project.git)https://github.com/KiranPandranki17/Bootcamp-1st-Project.git>
+  
+[Bootcamp 1st Project Repository](https://github.com/KiranPandranki17/Bootcamp-1st-Project.git)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
