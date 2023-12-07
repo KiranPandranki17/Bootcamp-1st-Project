@@ -15,6 +15,9 @@ This app will run in the browser using HTML, CSS, JavaScript. Also used 2 server
 - https://www.w3schools.com/jsref/dom_obj_all.asp
 - https://codepen.io/
 - chatGPT
+- [Font Awesome](https://fontawesome.com/)
+- https://developer.mozilla.org/en-US/
+- https://edabit.com/
 - https://developer.themoviedb.org/docs
 - https://www.omdbapi.com/
 - https://fonts.google.com/
