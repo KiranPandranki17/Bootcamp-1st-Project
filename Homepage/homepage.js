@@ -422,42 +422,92 @@ function like(event) {
 
 
 const saved = () => {
-
   const likedMovies = JSON.parse(localStorage.getItem("likedMovies")) || [];
+  const movieDetailsOverlay = document.querySelector(".movie-details-overlay");
 
-    const movieDetailsOverlay = document.querySelector(".movie-details-overlay");
   if (likedMovies.length > 0) {
-    
     movieDetailsOverlay.innerHTML = "";
 
     likedMovies.forEach((imdbID) => {
-    
       fetch(`${OMDB_API_URL}?apikey=${API_KEY}&i=${imdbID}`)
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
         .then((movieDetails) => {
-        
-          const movieCard = document.createElement("div");
-          movieCard.classList.add("movie-card");
+          if (movieDetails.Error) {
+            throw new Error(movieDetails.Error);
+          }
 
-          const moviePoster = document.createElement("img");
-          moviePoster.classList.add("movie-poster");
-          moviePoster.src = movieDetails.Poster !== "N/A" ? movieDetails.Poster : "placeholder.jpg";
-          moviePoster.alt = movieDetails.Title + " Poster";
-          movieCard.appendChild(moviePoster);
+          
+          const isDisplayed = movieDetailsOverlay.querySelector(
+            `[data-imbd="${imdbID}"]`
+          );
 
-          const title = document.createElement("h2");
-          title.classList.add("movie-title");
-          title.textContent = movieDetails.Title;
-          movieCard.appendChild(title);
+          if (!isDisplayed) {
+            const movieCard = document.createElement("div");
+            movieCard.classList.add("movie-card");
+            movieCard.dataset.imbd = imdbID; 
 
+          
+            const moviePoster = document.createElement("img");
+            moviePoster.classList.add("movie-poster");
+            moviePoster.src = movieDetails.Poster !== "N/A" ? movieDetails.Poster : "placeholder.jpg";
+            moviePoster.alt = movieDetails.Title + " Poster";
+            movieCard.appendChild(moviePoster);
 
-          movieDetailsOverlay.append(movieCard);
-        });
+            const title = document.createElement("h2");
+            title.classList.add("movie-title");
+            title.textContent = movieDetails.Title;
+            movieCard.appendChild(title);
 
-        
+            movieDetailsOverlay.appendChild(movieCard);
+          }
+        })
     });
-  } 
+  }
 };
+
+
+// const saved = () => {
+
+//   const likedMovies = JSON.parse(localStorage.getItem("likedMovies")) || [];
+
+//     const movieDetailsOverlay = document.querySelector(".movie-details-overlay");
+//   if (likedMovies.length > 0) {
+    
+//     movieDetailsOverlay.innerHTML = "";
+
+//     likedMovies.forEach((imdbID) => {
+    
+//       fetch(`${OMDB_API_URL}?apikey=${API_KEY}&i=${imdbID}`)
+//         .then((response) => response.json())
+//         .then((movieDetails) => {
+        
+//           const movieCard = document.createElement("div");
+//           movieCard.classList.add("movie-card");
+
+//           const moviePoster = document.createElement("img");
+//           moviePoster.classList.add("movie-poster");
+//           moviePoster.src = movieDetails.Poster !== "N/A" ? movieDetails.Poster : "placeholder.jpg";
+//           moviePoster.alt = movieDetails.Title + " Poster";
+//           movieCard.appendChild(moviePoster);
+
+//           const title = document.createElement("h2");
+//           title.classList.add("movie-title");
+//           title.textContent = movieDetails.Title;
+//           movieCard.appendChild(title);
+
+
+//           movieDetailsOverlay.append(movieCard);
+//         });
+
+        
+//     });
+//   } 
+// };
 
 saved();
 
