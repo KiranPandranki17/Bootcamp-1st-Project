@@ -1,5 +1,4 @@
 # CinePulse
-# CinePulse
 Your go-to movie and TV series companion! With our website, you can easily filter movies & TV series by titles, cast, and release years, tailoring your watchlist to your preferences. Want to binge-watch series or dive into a movie marathon? Use our specialized filters to separate movies from series effortlessly. Plus, stay updated with the latest releases in the UK with our curated lists showcasing the newest movies of the week or day.
 CinePulse: Discover and enjoy the magic of cinema at your fingertips!
 As movie enthusiasts, we would like to explore a wide range of movies and series easily. Searching for specific titles, filtering by cast, year, and type (movie or series), and staying updated on trending movies & TV series around the UK. This website has also been designed with the ability to create a personal account, log in, like your favorite movies & TV series, view detailed information including cast/crew, ratings, and movie posters.
